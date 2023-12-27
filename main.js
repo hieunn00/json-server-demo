@@ -31,7 +31,7 @@ server.use((req, res, next) => {
 router.render = (req, res) => {
 
   const param = queryString.parse(req._parsedUrl.query)
-  console.log("LOG ~ file: main.js:34 ~ param:", param)
+  // console.log("LOG ~ file: main.js:34 ~ param:", param)
   const headers = res.getHeaders()
   const totalCountHeader = headers['x-total-count']
   if (req.method === 'GET' && totalCountHeader) {
